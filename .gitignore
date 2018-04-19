@@ -5,4 +5,6 @@
 *.png
 .RData
 *.rda
+*.Rproj
+.Rproj.user
 
