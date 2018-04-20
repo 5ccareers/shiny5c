@@ -36,7 +36,7 @@ ind.list <- list(
     "No. of Promotions" = "NumPromotions",
     "Career Aspirations" = "CarAspirations",
     "Turnover Intention" = "TurnoverIntent",
-    "Supervisor Support" = "SupersvisorSupp",
+    "Supervisor Support" = "SupervisorSupp",
     "Affective Commitment" = "AffectiveCommit",
     "Employability" = "Employability",
     "Employee development" = "EmployeeDev",
