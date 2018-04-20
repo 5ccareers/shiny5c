@@ -116,11 +116,7 @@ about.html <- '
 </ul></p>
 <p><b>Contact</b>
 <ul>
-  <li>[WOLFGANG? JON? …?]</li>
-</ul></p>
-<p><b>Tool hosting and maintenance</b>
-<ul>
-<li>Dominik Zellhofer, WU Vienna, Vienna, Austria (<a href="https://www.wu.ac.at/" target="_blank">www.wu.ac.at</a>)</li>
+  <li><a href="mailto:5ccareers.dev@gmail.com">5ccareers.dev@gmail.com</a></li>
 </ul></p>
 <p><b>Tool development:</b>
 <ul>
@@ -129,8 +125,11 @@ about.html <- '
 <li>Rick Cotton, University of Victoria, Victoria, Canada (<a href="https://www.uvic.ca/" target="_blank">www.uvic.ca</a>)</li>
 <li>Dominik Zellhofer, WU Vienna, Vienna, Austria (<a href="https://www.wu.ac.at/" target="_blank">www.wu.ac.at</a>)</li>
 </ul></p>
+<p><b>Tool hosting and maintenance</b>
+<ul>
+<li>Dominik Zellhofer, WU Vienna, Vienna, Austria (<a href="https://www.wu.ac.at/" target="_blank">www.wu.ac.at</a>)</li>
+</ul></p>
 </div>
-
 <div class="tab-pane" data-value="techdet" id="tab-9998-2">
 <h4>Technical details</h4>
 This visualisation tool is highly inspired by the <a href="https://rstudio.stat.washington.edu/shiny/wppExplorer/inst/explore/" target="_blank">WPP 2017 Explorer</a>. It runs on a <a href="https://www.rstudio.com/products/shiny/" target="_blank">Shiny server</a> and uses <a href="https://developers.google.com/chart/" target="_blank">Google Charts</a> to show the world map. The world map implementation is done via the fantastic R package <a href="https://cran.r-project.org/web/packages/googleVis/" target="_blank">googleVis: R Interface to Google Charts</a>. The bar charts and the scatter plots are build using <a href="https://cran.r-project.org/web/packages/ggplot2/index.html" target="_blank">ggplot2</a>. The default color scheme is implemented via <a href="https://cran.r-project.org/web/packages/viridis/index.html" target="_blank">viridis: Default Color Maps from \'matplotlib\'</a>. And finally the logos on the top are placed as desrcibed under <a href="http://candrea.ch/blog/adding-multiple-company-logos-to-shiny-app/" target="_blank">Adding multiple Company Logos to Shiny App</a>.
