@@ -1,8 +1,9 @@
 library(foreign)
 library(data.table)  # browseVignettes("data.table")
 
+
 ### 5c data
-fn <- "5c_merged_dataset_jan_2018_31_countries_visualization.sav"
+#fn <- "5c_merged_dataset_jan_2018_31_countries_visualization.sav"
 #data.spss <- read.spss(fn, use.value.labels = FALSE, to.data.frame = TRUE)
 #saveRDS(data.spss, file="data_spss.rda")
 data.spss <- readRDS("data_spss.rda")
@@ -214,7 +215,7 @@ library(readxl)
 
 fn <- "macro_factors_visualization.xlsx"
 data.mac <- data.table(read_xlsx(fn))
-names(data.mac) <- c("COUNTRY","gdp","gcs","gini","povr","educ")
+names(data.mac) <- c("COUNTRY","gdp","gcs","gini","povr","educ","ihdi")
 data.mac[data.mac=="N/A"] <- NA
 data.mac$educ <- as.numeric(data.mac$educ)
 
@@ -230,6 +231,8 @@ data.mrg <- data.agg[data.mac2, on = "COUNTRY"]
 data.mrg$COUNTRY[data.mrg$COUNTRY == "Korea"] <- "South Korea"
 data.mrg$COUNTRY[data.mrg$COUNTRY == "UK"] <- "United Kingdom"
 data.mrg$COUNTRY[data.mrg$COUNTRY == "USA"] <- "United States"
+
+names(data.mrg) <- c("COUNTRY","FinSecurity_Imp","PosWorkRel_Imp","FinSucc_Imp","LearnDev_Imp","WLB_Imp","PosImpact_Imp","Entrepren_Imp","FinSecurity_Ach","PosWorkRel_Ach","FinSucc_Ach","LearnDev_Ach","WLB_Ach","PosImpact_Ach","Entrepren_Ach","FinSecurity_Gap","PosWorkRel_Gap","FinSucc_Gap","LearnDev_Gap","WLB_Gap","PosImpact_Gap","Entrepren_Gap","CarSuccess","NumOccupations","NumEmployers","NumPromotions","CarAspirations","TurnoverIntent","SupervisorSupp","AffectiveCommit","Employability","EmployeeDev","LifeSatisfaction","Health","GDP","GlobalCompet","Gini","PovertyRate","EduSkillsScore","IHDI","CLUSTER")
 
 saveRDS(data.mrg, file="data_mrg.rda")
 
