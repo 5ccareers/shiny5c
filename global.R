@@ -3,53 +3,54 @@ data.all <- readRDS("data_mrg.rda")
 
 ## define global variables
 i.list <- list(
-    "Financial Success" = "fsu_i",
-    "Entrepreneurship" = "ent_i",
-    "Positive Work Relationships" = "pwr_i",
-    "Positive Impact" = "pim_i",
-    "Learning and Development" = "lde_i",
-    "Work-Life Balance" = "wlb_i",
-    "Financial Security" = "fse_i")
+    "Financial Success" = "FinSucc_Imp",
+    "Entrepreneurship" = "Entrepren_Imp",
+    "Positive Work Relationships" = "PosWorkRel_Imp",
+    "Positive Impact" = "PosImpact_Imp",
+    "Learning and Development" = "LearnDev_Imp",
+    "Work-Life Balance" = "WLB_Imp",
+    "Financial Security" = "FinSecurity_Imp")
 
 a.list <- list(
-    "Financial Success" = "fsu_a",
-    "Entrepreneurship" = "ent_a",
-    "Positive Work Relationships" = "pwr_a",
-    "Positive Impact" = "pim_a",
-    "Learning and Development" = "lde_a",
-    "Work-Life Balance" = "wlb_a",
-    "Financial Security" = "fse_a")
+    "Financial Success" = "FinSucc_Ach",
+    "Entrepreneurship" = "Entrepren_Ach",
+    "Positive Work Relationships" = "PosWorkRel_Imp",
+    "Positive Impact" = "PosImpact_Imp",
+    "Learning and Development" = "LearnDev_Imp",
+    "Work-Life Balance" = "WLB_Imp",
+    "Financial Security" = "FinSecurity_Imp")
 
 gap.list <- list(
-    "Financial Success" = "fsu_gap",
-    "Entrepreneurship" = "ent_gap",
-    "Positive Work Relationships" = "pwr_gap",
-    "Positive Impact" = "pim_gap",
-    "Learning and Development" = "lde_gap",
-    "Work-Life Balance" = "wlb_gap",
-    "Financial Security" = "fse_gap")
+    "Financial Success" = "FinSucc_Gap",
+    "Entrepreneurship" = "Entrepren_Gap",
+    "Positive Work Relationships" = "PosWorkRel_Gap",
+    "Positive Impact" = "PosImpact_Gap",
+    "Learning and Development" = "LearnDev_Gap",
+    "Work-Life Balance" = "WLB_Gap",
+    "Financial Security" = "FinSecurity_Gap")
 
 ind.list <- list(
-    "Overall Career Success" = "carsuc",
-    "No. of Occupations" = "no_occ",
-    "No. of Employers" = "no_emp",
-    "No. of Promotions" = "no_prom",
-    "Career Aspirations" = "carasp",
-    "Turnover Intention" = "turnint",
-    "Supervisor Support" = "svsupp",
-    "Affective Commitment" = "affcom",
-    "Employability" = "employ",
-    "Employee development" = "pied",
-    "Life Satisfaction" = "lifesat",
-    "Health" = "health"
+    "Overall Career Success" = "CarSuccess",
+    "No. of Occupations" = "NumOccupations",
+    "No. of Employers" = "NumEmployers",
+    "No. of Promotions" = "NumPromotions",
+    "Career Aspirations" = "CarAspirations",
+    "Turnover Intention" = "TurnoverIntent",
+    "Supervisor Support" = "SupersvisorSupp",
+    "Affective Commitment" = "AffectiveCommit",
+    "Employability" = "Employability",
+    "Employee development" = "EmployeeDev",
+    "Life Satisfaction" = "LifeSatisfaction",
+    "Health" = "Health"
 )
 
 cnt.list <- list(
-    "GDP" = "gdp",
-    "Global Competitiveness Score" =  "gcs",
-    "Gini Coefficient" =  "gini",
-    "Poverty rate" = "povr",
-    "Education/Skills" = "educ"
+    "GDP" = "GDP",
+    "Global Competitiveness Score" =  "GlobalCompet",
+    "Gini Coefficient" =  "Gini",
+    "Poverty rate" = "PovertyRate",
+    "Education/Skills" = "EduSkillsScore",
+    "IHDI" = "IHDI"
 )
 
 all.list <- list(i.list, a.list, gap.list, ind.list, cnt.list)

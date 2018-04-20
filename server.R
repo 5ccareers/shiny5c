@@ -68,25 +68,25 @@ shinyServer(function(input, output, session) {
     output$dim11 <- renderUI({
         if(is.null(input$facdimsel1)) return(NULL)
         if(input$facdimsel1 == sel1[1]) {
-            selectInput("dim11", "", i.list, "fsu_i")
+            selectInput("dim11", "", i.list, "FinSucc_Imp")
         }
     })
     output$dim21 <- renderUI({
         if(is.null(input$facdimsel1)) return(NULL)
         if(input$facdimsel1 == sel1[2]) {
-            selectInput("dim21", "", a.list, "fsu_a")
+            selectInput("dim21", "", a.list, "FinSucc_Ach")
         }
     })
     output$dim31 <- renderUI({
         if(is.null(input$facdimsel1)) return(NULL)
         if(input$facdimsel1 == sel1[3]) {
-            selectInput("dim31", "", gap.list, "fsu_gap")
+            selectInput("dim31", "", gap.list, "FinSucc_Gap")
         }
     })
     output$fac11 <- renderUI({
         if(is.null(input$facdimsel1)) return(NULL)
         if(input$facdimsel1 == sel1[4]) {
-            selectInput("fac11", "", ind.list, "WorkSuc")
+            selectInput("fac11", "", ind.list, "CarSuccess")
         }
     })
     output$fac21 <- renderUI({
@@ -109,13 +109,13 @@ shinyServer(function(input, output, session) {
     })
 
     output$dim12 <- renderUI({
-        selectInput("dim12","Importance", i.list, "fsu_i", multiple = TRUE)
+        selectInput("dim12","Importance", i.list, "FinSucc_Imp", multiple = TRUE)
     })
     output$dim22 <- renderUI({
-        selectInput("dim22","Achievement", a.list, "fsu_a", multiple = TRUE)
+        selectInput("dim22","Achievement", a.list, "FinSucc_Ach", multiple = TRUE)
     })
     output$dim32 <- renderUI({
-        selectInput("dim32","Gap", gap.list, "fsu_gap", multiple = TRUE)
+        selectInput("dim32","Gap", gap.list, "FinSucc_Gap", multiple = TRUE)
     })
 
     output$xaxis  <- renderUI({
@@ -127,7 +127,7 @@ shinyServer(function(input, output, session) {
         data <- data.all %>%
             filter(COUNTRY %in% input$country2) %>%
             select_("COUNTRY", .dots=c(input$dim12, input$dim22, input$dim32)) %>%
-            gather(Dimension, Value, matches("_i|_a|_gap"))
+            gather(Dimension, Value, matches("_Imp|_Ach|_Gap"))
 
         ## preserve order of dimensions as in the data
         data$Dimension <- factor(data$Dimension, levels=unique(data$Dimension))
