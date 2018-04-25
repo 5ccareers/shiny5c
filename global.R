@@ -14,11 +14,11 @@ i.list <- list(
 a.list <- list(
     "Financial Success" = "FinSucc_Ach",
     "Entrepreneurship" = "Entrepren_Ach",
-    "Positive Work Relationships" = "PosWorkRel_Imp",
-    "Positive Impact" = "PosImpact_Imp",
-    "Learning and Development" = "LearnDev_Imp",
-    "Work-Life Balance" = "WLB_Imp",
-    "Financial Security" = "FinSecurity_Imp")
+    "Positive Work Relationships" = "PosWorkRel_Ach",
+    "Positive Impact" = "PosImpact_Ach",
+    "Learning and Development" = "LearnDev_Ach",
+    "Work-Life Balance" = "WLB_Ach",
+    "Financial Security" = "FinSecurity_Ach")
 
 gap.list <- list(
     "Financial Success" = "FinSucc_Gap",
