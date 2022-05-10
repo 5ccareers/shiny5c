@@ -26,7 +26,6 @@ shinyUI(fluidPage(
         tags$style(type='text/css', "#dimxfac {height: 500px !important;}"),
         tags$style(type='text/css', "th, td {padding: 5px;}"),
         tags$style(type='text/css', "table, th, td { border-bottom: 1px solid #000; }"),
-        includeScript("www/ga.js"),
         includeScript("www/5c.js")
       ),
       conditionalPanel(condition="input.conditionedPanels==1",
